@@ -1,23 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+const Title = ({children}) => {
+    return <h1>{children}</h1>;
+}
+
+const Subtitle = ({children}) => {
+    return <label>{children}</label>;
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <Title children='Madhushri Patil' />
+          <Subtitle children='Learning react' />
       </header>
     </div>
   );
